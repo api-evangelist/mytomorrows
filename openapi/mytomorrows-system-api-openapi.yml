@@ -1,0 +1,37 @@
+openapi: 3.1.0
+info:
+  title: Enterprise Search Legacy GraphQL Proxy System API
+  version: 0.1.0
+tags:
+- name: System
+paths:
+  /es/api/health:
+    get:
+      tags:
+      - System
+      summary: Health
+      description: 'Health check for liveness/readiness probes. Uses S3 connectivity (EMP-727)
+
+        instead of Neo4j GraphQL to avoid probe failures when the external API is down.'
+      operationId: health_es_api_health_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+  /health:
+    get:
+      tags:
+      - System
+      summary: Health
+      description: 'Health check for liveness/readiness probes. Uses S3 connectivity (EMP-727)
+
+        instead of Neo4j GraphQL to avoid probe failures when the external API is down.'
+      operationId: health_health_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}

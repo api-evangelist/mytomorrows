@@ -1,0 +1,74 @@
+openapi: 3.1.0
+info:
+  title: Enterprise Search Legacy GraphQL Proxy API
+  version: 0.1.0
+tags:
+- name: Legacy GraphQL Proxy
+paths:
+  /gql/graphql:
+    post:
+      tags:
+      - Legacy GraphQL Proxy
+      summary: Forward Legacy Graphql Request
+      description: 'Transparently forward /graphql requests to the legacy GraphQL lambda.
+
+        Log the origin to track current consumers of the endpoint.'
+      operationId: forward_legacy_graphql_request_gql_graphql_post
+      parameters:
+      - name: content-type
+        in: header
+        required: true
+        schema:
+          type: string
+          title: Content-Type
+      - name: origin
+        in: header
+        required: false
+        schema:
+          type: string
+          default: unknown
+          title: Origin
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+components:
+  schemas:
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError

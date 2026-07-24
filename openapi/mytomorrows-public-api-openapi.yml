@@ -1,0 +1,19 @@
+openapi: 3.1.0
+info:
+  title: Enterprise Search Legacy GraphQL Proxy Public API
+  version: 0.1.0
+tags:
+- name: Public
+paths:
+  /es/api/:
+    get:
+      tags:
+      - Public
+      summary: Root
+      operationId: root_es_api__get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
