@@ -1,0 +1,22 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for myTomorrows Enterprise Search API
+  version: 1.0.0
+extends: openapi/mytomorrows-enterprise-search-openapi.json
+actions:
+- target: $.info
+  update:
+    description: >-
+      Enterprise Search API — the FastAPI backend powering myTomorrows Trial Search
+      AI, which matches patients and healthcare professionals to clinical trials and
+      expanded-access programs. Harvested by the API Evangelist enrichment pipeline;
+      not an officially documented public developer API.
+    x-apievangelist-enriched: '2026-07-20'
+    x-apievangelist-maturity: beta
+    x-apievangelist-domain: healthcare
+- target: $.servers
+  update:
+  - url: https://enterprise-search.mytomorrows.com
+    description: Enterprise Search API host (OpenAPI served at /openapi.json)
+  - url: https://trialsearchai-beta.mytomorrows.com
+    description: Trial Search AI beta app surface

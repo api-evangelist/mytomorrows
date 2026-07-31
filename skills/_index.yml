@@ -1,0 +1,12 @@
+generated: '2026-07-20'
+method: generated
+skills:
+- file: mytomorrows-generate-trial-search-report.md
+  name: Generate a Trial Search Report (TSR)
+  api: openapi/mytomorrows-enterprise-search-openapi.json
+  operations:
+  - autocomplete_conditions_endpoint_v01_llm_autocomplete_conditions_synonyms_post
+  - questionnaire_endpoint_v01_search_questionnaire_post
+  - count_wrapper_endpoint_v01_wrapper_study_search_counts_get
+  - generate_tsr_endpoint_v01_search_generate_tsr_post
+  - request_tsr_endpoint_v01_search_request_tsr_post

@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/mytomorrows-enterprise-search-openapi.json; security/mytomorrows-trust-center.yml
+standards:
+- id: openapi-3.1
+  conforms: true
+  evidence: Enterprise Search API publishes an OpenAPI 3.1.0 document at /openapi.json.
+- id: oauth2
+  conforms: false
+  evidence: No oauth2 securitySchemes declared.
+- id: oidc
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: 422 errors use the FastAPI/Pydantic validation envelope, not application/problem+json.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: No /.well-known/security.txt served on any host (all 404/absent).
+- id: soc2
+  conforms: true
+  evidence: SOC 2 listed on trust.mytomorrows.com trust center.
+- id: iso-27001
+  conforms: true
+  evidence: ISO/IEC 27001 (+27017, +27018) listed on trust.mytomorrows.com.
+- id: hipaa
+  conforms: true
+  evidence: HIPAA listed on trust.mytomorrows.com trust center.
+- id: gdpr
+  conforms: true
+  evidence: GDPR listed on trust.mytomorrows.com; EU-headquartered health platform.

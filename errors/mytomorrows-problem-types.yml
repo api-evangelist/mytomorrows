@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/mytomorrows-enterprise-search-openapi.json
+format: fastapi-validation
+envelope: 'application/json body with a top-level `detail[]` array of {loc, msg, type} validation errors (FastAPI / Pydantic default). Not RFC 9457 problem+json.'
+notes: >-
+  The Enterprise Search API is a FastAPI service. Every operation declares only a
+  200 Successful Response and a 422 Validation Error; no 4xx/5xx problem catalog
+  beyond the framework default is published in the spec.
+problems:
+- status: 422
+  title: Validation Error
+  schema: HTTPValidationError
+  description: >-
+    Request failed schema validation. Body is {detail: [{loc, msg, type}]} where
+    loc is the JSON path to the offending field, msg is a human message, and type
+    is the Pydantic error type.
+  applies_to: 33 of 42 operations (every operation that takes a request body or query params)

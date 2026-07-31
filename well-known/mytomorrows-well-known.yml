@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+note: >-
+  Probed /.well-known/ discovery paths on the website host and the three API hosts
+  found in the app config (enterprise-search, microservice, trialsearchai-beta).
+  No well-known documents are served; absence recorded as valid data.
+hosts:
+- host: https://mytomorrows.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://enterprise-search.mytomorrows.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://microservice.mytomorrows.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404

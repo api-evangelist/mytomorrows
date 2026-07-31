@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/mytomorrows-enterprise-search-openapi.json
+versioning:
+  scheme: uri-path
+  current: v01
+  docs: null
+  detail: Version pinned in the URL path (/v01/... and /es/api/v01/...). Spec info.version is 0.1.0 (beta).
+deprecation:
+  policy_url: null
+  sunset_header: false
+sla:
+  url: null
+status_page: null
+maturity: beta
+detail: >-
+  The Enterprise Search API host trialsearchai-beta.mytomorrows.com is a beta
+  surface (v01 / info.version 0.1.0). No public versioning policy, deprecation
+  policy, SLA, or status page was found.
+deprecated_operations: []

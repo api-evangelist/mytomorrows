@@ -1,21 +1,104 @@
 aid: mytomorrows
-name: mytomorrows
-description: mytomorrows is a company surfaced as a portfolio company of balderton-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+name: myTomorrows
+description: >-
+  myTomorrows is a healthcare technology platform that helps patients and healthcare
+  professionals discover and access clinical trials and expanded-access (pre-approval)
+  treatment options, and helps biopharma companies run and manage expanded-access
+  programs (EAPs), collect real-world data, and recruit trial patients. Founded in
+  2012 by Dr. Ronald Brus, the company operates in roughly 50 countries. Its
+  Trial Search AI product is backed by a FastAPI "Enterprise Search API" that
+  generates Trial Search Reports (TSR), resolves conditions, and searches studies.
+  This profile was surfaced as a portfolio company of Balderton Capital and enriched
+  by the API Evangelist pipeline from a harvested OpenAPI and public trust surface.
 url: https://raw.githubusercontent.com/api-evangelist/mytomorrows/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://mytomorrows.com/favicon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - balderton-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: openapi-discovered
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Healthcare
+- Clinical Trials
+- Expanded Access
+- Pharmaceuticals
+- Patient Access
+- Life Sciences
+- Search
+- Artificial Intelligence
+apis:
+- aid: mytomorrows:mytomorrows-legacy-graphql-proxy-api
+  name: myTomorrows Legacy GraphQL Proxy API
+  description: The Legacy GraphQL Proxy API from myTomorrows — 1 operation(s) for legacy graphql proxy.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Legacy GraphQL Proxy
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-legacy-graphql-proxy-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-public-api
+  name: myTomorrows Public API
+  description: The Public API from myTomorrows — 1 operation(s) for public.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Public
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-public-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-system-api
+  name: myTomorrows System API
+  description: The System API from myTomorrows — 2 operation(s) for system.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - System
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-system-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-v1-api
+  name: myTomorrows V1 API
+  description: The V1 API from myTomorrows — 38 operation(s) for v1.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - V1
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-v1-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,3 +107,48 @@ maintainers:
 common:
 - type: Website
   url: https://mytomorrows.com/en/
+- type: Blog
+  url: https://mytomorrows.com/en/blog
+- type: TermsOfService
+  url: https://mytomorrows.com/en/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://mytomorrows.com/en/privacy-statement
+- type: TrustCenter
+  url: security/mytomorrows-trust-center.yml
+- type: Compliance
+  url: https://trust.mytomorrows.com/
+- type: AgenticAccess
+  url: agentic-access/mytomorrows-agentic-access.yml
+- type: DomainSecurity
+  url: security/mytomorrows-domain-security.yml
+- type: MCPServer
+  url: mcp/mytomorrows-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: ErrorCatalog
+  url: errors/mytomorrows-problem-types.yml
+- type: Conventions
+  url: conventions/mytomorrows-conventions.yml
+- type: Conformance
+  url: conformance/mytomorrows-conformance.yml
+- type: Lifecycle
+  url: lifecycle/mytomorrows-lifecycle.yml
+- type: WellKnown
+  url: well-known/mytomorrows-well-known.yml
+- type: LLMsTxt
+  url: llms/mytomorrows-llms.txt
+- type: Packages
+  url: packages/mytomorrows-packages.yml
+- type: SDKs
+  url: packages/mytomorrows-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/myTomorrows
+- type: DeveloperPortal
+  url: https://mytomorrows.com/enterprise/api-beta-program/
+- type: SignUp
+  url: https://mytomorrows.com/enterprise/api-beta-program/
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 15
+  pass: local-v1

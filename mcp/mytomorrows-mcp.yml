@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: openapi/mytomorrows-enterprise-search-openapi.json
+note: >-
+  No official hosted/remote MCP server was found for myTomorrows. This is a
+  CANDIDATE tool list derived from the marquee operations of the Enterprise Search
+  API (Trial Search AI backend). Tool names are hand-cleaned from FastAPI-generated
+  operationIds; each maps to a real operation in the spec.
+server:
+  name: mytomorrows-enterprise-search
+  transport: http
+  url: null
+tools:
+- name: generate_trial_search_report
+  description: Generate a Trial Search Report (TSR) for a patient condition/query.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#generate_tsr_endpoint_v01_search_generate_tsr_post
+- name: request_trial_search_report
+  description: Request a Trial Search Report for a case.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#request_tsr_endpoint_v01_search_request_tsr_post
+- name: get_search_questionnaire
+  description: Return the intake questionnaire that scopes a trial search.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#questionnaire_endpoint_v01_search_questionnaire_post
+- name: autocomplete_conditions
+  description: Autocomplete medical conditions and their synonyms.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#autocomplete_conditions_endpoint_v01_llm_autocomplete_conditions_synonyms_post
+- name: autocomplete_country
+  description: Autocomplete country names for a search.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#autocomplete_country_endpoint_v01_llm_autocomplete_country_post
+- name: autocomplete_trial_id
+  description: Autocomplete a clinical trial identifier.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#autocomplete_trial_id_endpoint_v01_llm_autocomplete_trial_id_post
+- name: search_study_counts
+  description: Return study/trial counts matching a search.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#count_wrapper_endpoint_v01_wrapper_study_search_counts_get
+- name: transcribe_documents
+  description: Transcribe uploaded clinical documents for annotation.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#document_transcription_endpoint_v01_document_transcribe_documents_post
+- name: process_annotations
+  description: Process clinical text annotations.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#process_annotations_endpoint_v01_anno_process_post
+- name: request_mdt_pdf
+  description: Request a multi-disciplinary-team (MDT) PDF report.
+  source_operation: openapi/mytomorrows-enterprise-search-openapi.json#mdt_request_pdf_endpoint_v01_mdt_request_pdf_post

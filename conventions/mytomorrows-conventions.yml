@@ -1,0 +1,41 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/mytomorrows-enterprise-search-openapi.json
+api: Enterprise Search API
+summary: >-
+  Cross-cutting request/response semantics derived from the Enterprise Search
+  OpenAPI (FastAPI service backing myTomorrows Trial Search AI). No published
+  developer docs exist; these are observed from the spec, not a provider contract.
+authentication:
+  style: none-declared
+  detail: >-
+    The OpenAPI declares no securitySchemes. Endpoints appear to be consumed by
+    the first-party web app (trialsearchai-beta.mytomorrows.com) rather than a
+    documented public developer surface.
+versioning:
+  scheme: uri-path
+  current: v01
+  detail: >-
+    Operations are exposed twice: under a bare `/v01/...` prefix and under an
+    `/es/api/v01/...` gateway prefix. Version pinned in the path segment.
+content_type:
+  request: application/json
+  response: application/json
+request_shape:
+  detail: >-
+    Most POST operations accept a loose `JsonRequest` object (additionalProperties:
+    true) — an untyped JSON passthrough — rather than a strict typed body.
+idempotency:
+  supported: false
+  detail: No idempotency-key header or parameter is documented or present in the spec.
+pagination:
+  supported: false
+  detail: No pagination parameters or envelope fields are present in the spec.
+error_envelope:
+  format: fastapi-validation
+  detail: 422 responses return {detail: [{loc, msg, type}]} (see errors/mytomorrows-problem-types.yml).
+rate_limiting:
+  signal: none-observed
+cross_links:
+  errors: errors/mytomorrows-problem-types.yml
+  lifecycle: lifecycle/mytomorrows-lifecycle.yml

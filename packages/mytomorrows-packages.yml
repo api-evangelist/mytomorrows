@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://registry.npmjs.org/@mytomorrows/javascript-sdk
+note: >-
+  One first-party client library was found on npm. It is a legacy jQuery-based
+  JavaScript client for the myTomorrows backend API; the last published version
+  (0.17.4) dates to 2017-06-16, so it is unmaintained but genuinely first-party
+  (published under the @mytomorrows scope, repo under the myTomorrows GitHub org).
+  No current Python/Java/Go/Ruby/.NET client libraries were found on PyPI, Maven
+  Central, pkg.go.dev, RubyGems, or NuGet. The harvested Enterprise Search API and
+  the newer Matching API beta program publish no documented SDK.
+packages:
+- language: javascript
+  registry: npm
+  name: "@mytomorrows/javascript-sdk"
+  url: https://www.npmjs.com/package/@mytomorrows/javascript-sdk
+  repository: https://github.com/myTomorrows/mytomorrows-javascript-sdk
+  install: npm install @mytomorrows/javascript-sdk
+  version: 0.17.4
+  license: MIT
+  published: '2017-06-16'
+  official: true
+  status: legacy
+  description: jQuery JavaScript client used to communicate with the myTomorrows backend API.

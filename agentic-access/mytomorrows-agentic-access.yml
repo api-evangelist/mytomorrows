@@ -1,0 +1,634 @@
+generated: '2026-07-20'
+method: generated
+source: openapi/mytomorrows-enterprise-search-openapi.json
+description: Recommended x-agentic-access execution contracts, classified heuristically from
+  the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
+  audience per deployment. See research/curity/agentic-governance/.
+summary:
+  operations: 42
+  by_action_class:
+    acting: 33
+    connected: 9
+  by_consequence:
+    write: 33
+    read: 9
+  human_in_the_loop_required: 0
+operations:
+- path: /gql/graphql
+  method: post
+  operationId: forward_legacy_graphql_request_gql_graphql_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/
+  method: get
+  operationId: root_es_api__get
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /es/api/health
+  method: get
+  operationId: health_es_api_health_get
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /health
+  method: get
+  operationId: health_health_get
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /es/api/v01/docs
+  method: get
+  operationId: api_docs_es_api_v01_docs_get
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /es/api/v01/anno/to_annotate
+  method: post
+  operationId: get_annotations_endpoint_es_api_v01_anno_to_annotate_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/llm/llm_tsr_generate
+  method: post
+  operationId: llm_tsr_generate_endpoint_es_api_v01_llm_llm_tsr_generate_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/document/transcribe_documents
+  method: post
+  operationId: document_transcription_endpoint_es_api_v01_document_transcribe_documents_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/anno/process
+  method: post
+  operationId: process_annotations_endpoint_es_api_v01_anno_process_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/search/request_tsr
+  method: post
+  operationId: request_tsr_endpoint_es_api_v01_search_request_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/search/generate_tsr
+  method: post
+  operationId: generate_tsr_endpoint_es_api_v01_search_generate_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/search/questionnaire
+  method: post
+  operationId: questionnaire_endpoint_es_api_v01_search_questionnaire_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/llm/email_tsr
+  method: post
+  operationId: emailTSR_endpoint_es_api_v01_llm_email_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/llm/request_tsr
+  method: post
+  operationId: llm_tsr_request_endpoint_es_api_v01_llm_request_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/llm/autocomplete_country
+  method: post
+  operationId: autocomplete_country_endpoint_es_api_v01_llm_autocomplete_country_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/llm/autocomplete_aliases
+  method: post
+  operationId: autocomplete_aliases_endpoint_es_api_v01_llm_autocomplete_aliases_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/llm/review_tsr
+  method: post
+  operationId: llm_tsr_review_endpoint_es_api_v01_llm_review_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/autocomplete/autocomplete_aliases_graph
+  method: post
+  operationId: autocomplete_aliases_graph_endpoint_es_api_v01_autocomplete_autocomplete_aliases_graph_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/llm/autocomplete_conditions_synonyms
+  method: post
+  operationId: autocomplete_conditions_endpoint_es_api_v01_llm_autocomplete_conditions_synonyms_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/llm/autocomplete_trial_id
+  method: post
+  operationId: autocomplete_trial_id_endpoint_es_api_v01_llm_autocomplete_trial_id_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/mdt/request_pdf
+  method: post
+  operationId: mdt_request_pdf_endpoint_es_api_v01_mdt_request_pdf_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /es/api/v01/wrapper/autocomplete
+  method: get
+  operationId: autocomplete_wrapper_endpoint_es_api_v01_wrapper_autocomplete_get
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /es/api/v01/wrapper/study/search/counts
+  method: get
+  operationId: count_wrapper_endpoint_es_api_v01_wrapper_study_search_counts_get
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v01/docs
+  method: get
+  operationId: api_docs_v01_docs_get
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v01/anno/to_annotate
+  method: post
+  operationId: get_annotations_endpoint_v01_anno_to_annotate_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/llm/llm_tsr_generate
+  method: post
+  operationId: llm_tsr_generate_endpoint_v01_llm_llm_tsr_generate_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/document/transcribe_documents
+  method: post
+  operationId: document_transcription_endpoint_v01_document_transcribe_documents_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/anno/process
+  method: post
+  operationId: process_annotations_endpoint_v01_anno_process_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/search/request_tsr
+  method: post
+  operationId: request_tsr_endpoint_v01_search_request_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/search/generate_tsr
+  method: post
+  operationId: generate_tsr_endpoint_v01_search_generate_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/search/questionnaire
+  method: post
+  operationId: questionnaire_endpoint_v01_search_questionnaire_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/llm/email_tsr
+  method: post
+  operationId: emailTSR_endpoint_v01_llm_email_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/llm/request_tsr
+  method: post
+  operationId: llm_tsr_request_endpoint_v01_llm_request_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/llm/autocomplete_country
+  method: post
+  operationId: autocomplete_country_endpoint_v01_llm_autocomplete_country_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/llm/autocomplete_aliases
+  method: post
+  operationId: autocomplete_aliases_endpoint_v01_llm_autocomplete_aliases_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/llm/review_tsr
+  method: post
+  operationId: llm_tsr_review_endpoint_v01_llm_review_tsr_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/autocomplete/autocomplete_aliases_graph
+  method: post
+  operationId: autocomplete_aliases_graph_endpoint_v01_autocomplete_autocomplete_aliases_graph_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/llm/autocomplete_conditions_synonyms
+  method: post
+  operationId: autocomplete_conditions_endpoint_v01_llm_autocomplete_conditions_synonyms_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/llm/autocomplete_trial_id
+  method: post
+  operationId: autocomplete_trial_id_endpoint_v01_llm_autocomplete_trial_id_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/mdt/request_pdf
+  method: post
+  operationId: mdt_request_pdf_endpoint_v01_mdt_request_pdf_post
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /v01/wrapper/autocomplete
+  method: get
+  operationId: autocomplete_wrapper_endpoint_v01_wrapper_autocomplete_get
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /v01/wrapper/study/search/counts
+  method: get
+  operationId: count_wrapper_endpoint_v01_wrapper_study_search_counts_get
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
