@@ -1,0 +1,39 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Enterprise Search Legacy GraphQL Proxy API",
+    "version": "0.1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Legacy GraphQL Proxy",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Forward Legacy Graphql Request",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/gql/graphql",
+            "headers": [
+              {
+                "name": "content-type",
+                "value": ""
+              },
+              {
+                "name": "origin",
+                "value": ""
+              }
+            ]
+          },
+          "docs": "Transparently forward /graphql requests to the legacy GraphQL lambda.\nLog the origin to track current consumers of the endpoint."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

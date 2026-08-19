@@ -2,11 +2,9 @@ generated: '2026-07-20'
 method: derived
 status: candidate
 source: openapi/mytomorrows-enterprise-search-openapi.json
-note: >-
-  No official hosted/remote MCP server was found for myTomorrows. This is a
-  CANDIDATE tool list derived from the marquee operations of the Enterprise Search
-  API (Trial Search AI backend). Tool names are hand-cleaned from FastAPI-generated
-  operationIds; each maps to a real operation in the spec.
+note: No official hosted/remote MCP server was found for myTomorrows. This is a CANDIDATE tool list derived
+  from the marquee operations of the Enterprise Search API (Trial Search AI backend). Tool names are hand-cleaned
+  from FastAPI-generated operationIds; each maps to a real operation in the spec.
 server:
   name: mytomorrows-enterprise-search
   transport: http
@@ -42,3 +40,9 @@ tools:
 - name: request_mdt_pdf
   description: Request a multi-disciplinary-team (MDT) PDF report.
   source_operation: openapi/mytomorrows-enterprise-search-openapi.json#mdt_request_pdf_endpoint_v01_mdt_request_pdf_post
+deployment:
+  mode: none
+  verified: derived
+  tools: 10
+  checked: '2026-08-12'
+  source: catalog MCP census

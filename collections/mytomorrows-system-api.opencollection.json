@@ -1,0 +1,40 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Enterprise Search Legacy GraphQL Proxy System API",
+    "version": "0.1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "System",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Health",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/es/api/health"
+          },
+          "docs": "Health check for liveness/readiness probes. Uses S3 connectivity (EMP-727)\ninstead of Neo4j GraphQL to avoid probe failures when the external API is down."
+        },
+        {
+          "info": {
+            "name": "Health",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/health"
+          },
+          "docs": "Health check for liveness/readiness probes. Uses S3 connectivity (EMP-727)\ninstead of Neo4j GraphQL to avoid probe failures when the external API is down."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

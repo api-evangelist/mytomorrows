@@ -1,0 +1,564 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Enterprise Search Legacy GraphQL Proxy V1 API",
+    "version": "0.1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "V1",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Api Docs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/es/api/v01/docs"
+          },
+          "docs": "Api Docs"
+        },
+        {
+          "info": {
+            "name": "Get Annotations Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/anno/to_annotate",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Get Annotations Endpoint"
+        },
+        {
+          "info": {
+            "name": "Llm Tsr Generate Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/llm/llm_tsr_generate",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Llm Tsr Generate Endpoint"
+        },
+        {
+          "info": {
+            "name": "Document Transcription Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/document/transcribe_documents",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Lambda function to transcribe documents using OCR and return the text"
+        },
+        {
+          "info": {
+            "name": "Process Annotations Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/anno/process",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Process Annotations Endpoint"
+        },
+        {
+          "info": {
+            "name": "Request Tsr Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/search/request_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Request Tsr Endpoint"
+        },
+        {
+          "info": {
+            "name": "Generate Tsr Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/search/generate_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Generate Tsr Endpoint"
+        },
+        {
+          "info": {
+            "name": "Questionnaire Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/search/questionnaire",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Questionnaire Endpoint"
+        },
+        {
+          "info": {
+            "name": "Emailtsr Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/llm/email_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Emailtsr Endpoint"
+        },
+        {
+          "info": {
+            "name": "Llm Tsr Request Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/llm/request_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Llm Tsr Request Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Country Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/llm/autocomplete_country",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Country Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Aliases Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/llm/autocomplete_aliases",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Aliases Endpoint"
+        },
+        {
+          "info": {
+            "name": "Llm Tsr Review Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/llm/review_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Llm Tsr Review Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Aliases Graph Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/autocomplete/autocomplete_aliases_graph",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Aliases Graph Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Conditions Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/llm/autocomplete_conditions_synonyms",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Conditions Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Trial Id Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/llm/autocomplete_trial_id",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Trial Id Endpoint"
+        },
+        {
+          "info": {
+            "name": "Mdt Request Pdf Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/es/api/v01/mdt/request_pdf",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Mdt Request Pdf Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Wrapper Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/es/api/v01/wrapper/autocomplete"
+          },
+          "docs": "Autocomplete Wrapper Endpoint"
+        },
+        {
+          "info": {
+            "name": "Count Wrapper Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/es/api/v01/wrapper/study/search/counts"
+          },
+          "docs": "Count Wrapper Endpoint"
+        },
+        {
+          "info": {
+            "name": "Api Docs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/v01/docs"
+          },
+          "docs": "Api Docs"
+        },
+        {
+          "info": {
+            "name": "Get Annotations Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/anno/to_annotate",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Get Annotations Endpoint"
+        },
+        {
+          "info": {
+            "name": "Llm Tsr Generate Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/llm/llm_tsr_generate",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Llm Tsr Generate Endpoint"
+        },
+        {
+          "info": {
+            "name": "Document Transcription Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/document/transcribe_documents",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Lambda function to transcribe documents using OCR and return the text"
+        },
+        {
+          "info": {
+            "name": "Process Annotations Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/anno/process",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Process Annotations Endpoint"
+        },
+        {
+          "info": {
+            "name": "Request Tsr Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/search/request_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Request Tsr Endpoint"
+        },
+        {
+          "info": {
+            "name": "Generate Tsr Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/search/generate_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Generate Tsr Endpoint"
+        },
+        {
+          "info": {
+            "name": "Questionnaire Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/search/questionnaire",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Questionnaire Endpoint"
+        },
+        {
+          "info": {
+            "name": "Emailtsr Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/llm/email_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Emailtsr Endpoint"
+        },
+        {
+          "info": {
+            "name": "Llm Tsr Request Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/llm/request_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Llm Tsr Request Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Country Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/llm/autocomplete_country",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Country Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Aliases Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/llm/autocomplete_aliases",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Aliases Endpoint"
+        },
+        {
+          "info": {
+            "name": "Llm Tsr Review Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/llm/review_tsr",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Llm Tsr Review Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Aliases Graph Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/autocomplete/autocomplete_aliases_graph",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Aliases Graph Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Conditions Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/llm/autocomplete_conditions_synonyms",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Conditions Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Trial Id Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/llm/autocomplete_trial_id",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Autocomplete Trial Id Endpoint"
+        },
+        {
+          "info": {
+            "name": "Mdt Request Pdf Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "{{baseUrl}}/v01/mdt/request_pdf",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Mdt Request Pdf Endpoint"
+        },
+        {
+          "info": {
+            "name": "Autocomplete Wrapper Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/v01/wrapper/autocomplete"
+          },
+          "docs": "Autocomplete Wrapper Endpoint"
+        },
+        {
+          "info": {
+            "name": "Count Wrapper Endpoint",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/v01/wrapper/study/search/counts"
+          },
+          "docs": "Count Wrapper Endpoint"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
