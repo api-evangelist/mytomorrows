@@ -91,6 +91,8 @@ apis:
   humanURL: https://trialsearchai-beta.mytomorrows.com/
   baseURL: https://enterprise-search.mytomorrows.com
   tags:
+  - v1
+  tags_raw:
   - V1
   properties:
   - type: OpenAPI
