@@ -1,14 +1,14 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Enterprise Search Legacy GraphQL Proxy V1 API
+  title: Enterprise Search V1 API
   version: 0.1.0
 tags:
-- name: V1
+- name: v1
 paths:
   /es/api/v01/docs:
     get:
       tags:
-      - V1
+      - v1
       summary: Api Docs
       operationId: api_docs_es_api_v01_docs_get
       responses:
@@ -20,7 +20,7 @@ paths:
   /es/api/v01/anno/to_annotate:
     post:
       tags:
-      - V1
+      - v1
       summary: Get Annotations Endpoint
       operationId: get_annotations_endpoint_es_api_v01_anno_to_annotate_post
       requestBody:
@@ -44,7 +44,7 @@ paths:
   /es/api/v01/llm/llm_tsr_generate:
     post:
       tags:
-      - V1
+      - v1
       summary: Llm Tsr Generate Endpoint
       operationId: llm_tsr_generate_endpoint_es_api_v01_llm_llm_tsr_generate_post
       requestBody:
@@ -68,7 +68,7 @@ paths:
   /es/api/v01/document/transcribe_documents:
     post:
       tags:
-      - V1
+      - v1
       summary: Document Transcription Endpoint
       description: Lambda function to transcribe documents using OCR and return the text
       operationId: document_transcription_endpoint_es_api_v01_document_transcribe_documents_post
@@ -93,7 +93,7 @@ paths:
   /es/api/v01/anno/process:
     post:
       tags:
-      - V1
+      - v1
       summary: Process Annotations Endpoint
       operationId: process_annotations_endpoint_es_api_v01_anno_process_post
       requestBody:
@@ -117,7 +117,7 @@ paths:
   /es/api/v01/search/request_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Request Tsr Endpoint
       operationId: request_tsr_endpoint_es_api_v01_search_request_tsr_post
       requestBody:
@@ -141,7 +141,7 @@ paths:
   /es/api/v01/search/generate_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Generate Tsr Endpoint
       operationId: generate_tsr_endpoint_es_api_v01_search_generate_tsr_post
       requestBody:
@@ -165,7 +165,7 @@ paths:
   /es/api/v01/search/questionnaire:
     post:
       tags:
-      - V1
+      - v1
       summary: Questionnaire Endpoint
       operationId: questionnaire_endpoint_es_api_v01_search_questionnaire_post
       requestBody:
@@ -189,7 +189,7 @@ paths:
   /es/api/v01/llm/email_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Emailtsr Endpoint
       operationId: emailTSR_endpoint_es_api_v01_llm_email_tsr_post
       requestBody:
@@ -213,7 +213,7 @@ paths:
   /es/api/v01/llm/request_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Llm Tsr Request Endpoint
       operationId: llm_tsr_request_endpoint_es_api_v01_llm_request_tsr_post
       requestBody:
@@ -237,7 +237,7 @@ paths:
   /es/api/v01/llm/autocomplete_country:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Country Endpoint
       operationId: autocomplete_country_endpoint_es_api_v01_llm_autocomplete_country_post
       requestBody:
@@ -261,7 +261,7 @@ paths:
   /es/api/v01/llm/autocomplete_aliases:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Aliases Endpoint
       operationId: autocomplete_aliases_endpoint_es_api_v01_llm_autocomplete_aliases_post
       requestBody:
@@ -285,7 +285,7 @@ paths:
   /es/api/v01/llm/review_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Llm Tsr Review Endpoint
       operationId: llm_tsr_review_endpoint_es_api_v01_llm_review_tsr_post
       requestBody:
@@ -309,7 +309,7 @@ paths:
   /es/api/v01/autocomplete/autocomplete_aliases_graph:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Aliases Graph Endpoint
       operationId: autocomplete_aliases_graph_endpoint_es_api_v01_autocomplete_autocomplete_aliases_graph_post
       requestBody:
@@ -333,7 +333,7 @@ paths:
   /es/api/v01/llm/autocomplete_conditions_synonyms:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Conditions Endpoint
       operationId: autocomplete_conditions_endpoint_es_api_v01_llm_autocomplete_conditions_synonyms_post
       requestBody:
@@ -357,7 +357,7 @@ paths:
   /es/api/v01/llm/autocomplete_trial_id:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Trial Id Endpoint
       operationId: autocomplete_trial_id_endpoint_es_api_v01_llm_autocomplete_trial_id_post
       requestBody:
@@ -381,7 +381,7 @@ paths:
   /es/api/v01/mdt/request_pdf:
     post:
       tags:
-      - V1
+      - v1
       summary: Mdt Request Pdf Endpoint
       operationId: mdt_request_pdf_endpoint_es_api_v01_mdt_request_pdf_post
       requestBody:
@@ -405,7 +405,7 @@ paths:
   /es/api/v01/wrapper/autocomplete:
     get:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Wrapper Endpoint
       operationId: autocomplete_wrapper_endpoint_es_api_v01_wrapper_autocomplete_get
       responses:
@@ -417,7 +417,7 @@ paths:
   /es/api/v01/wrapper/study/search/counts:
     get:
       tags:
-      - V1
+      - v1
       summary: Count Wrapper Endpoint
       operationId: count_wrapper_endpoint_es_api_v01_wrapper_study_search_counts_get
       responses:
@@ -429,7 +429,7 @@ paths:
   /v01/docs:
     get:
       tags:
-      - V1
+      - v1
       summary: Api Docs
       operationId: api_docs_v01_docs_get
       responses:
@@ -441,7 +441,7 @@ paths:
   /v01/anno/to_annotate:
     post:
       tags:
-      - V1
+      - v1
       summary: Get Annotations Endpoint
       operationId: get_annotations_endpoint_v01_anno_to_annotate_post
       requestBody:
@@ -465,7 +465,7 @@ paths:
   /v01/llm/llm_tsr_generate:
     post:
       tags:
-      - V1
+      - v1
       summary: Llm Tsr Generate Endpoint
       operationId: llm_tsr_generate_endpoint_v01_llm_llm_tsr_generate_post
       requestBody:
@@ -489,7 +489,7 @@ paths:
   /v01/document/transcribe_documents:
     post:
       tags:
-      - V1
+      - v1
       summary: Document Transcription Endpoint
       description: Lambda function to transcribe documents using OCR and return the text
       operationId: document_transcription_endpoint_v01_document_transcribe_documents_post
@@ -514,7 +514,7 @@ paths:
   /v01/anno/process:
     post:
       tags:
-      - V1
+      - v1
       summary: Process Annotations Endpoint
       operationId: process_annotations_endpoint_v01_anno_process_post
       requestBody:
@@ -538,7 +538,7 @@ paths:
   /v01/search/request_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Request Tsr Endpoint
       operationId: request_tsr_endpoint_v01_search_request_tsr_post
       requestBody:
@@ -562,7 +562,7 @@ paths:
   /v01/search/generate_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Generate Tsr Endpoint
       operationId: generate_tsr_endpoint_v01_search_generate_tsr_post
       requestBody:
@@ -586,7 +586,7 @@ paths:
   /v01/search/questionnaire:
     post:
       tags:
-      - V1
+      - v1
       summary: Questionnaire Endpoint
       operationId: questionnaire_endpoint_v01_search_questionnaire_post
       requestBody:
@@ -610,7 +610,7 @@ paths:
   /v01/llm/email_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Emailtsr Endpoint
       operationId: emailTSR_endpoint_v01_llm_email_tsr_post
       requestBody:
@@ -634,7 +634,7 @@ paths:
   /v01/llm/request_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Llm Tsr Request Endpoint
       operationId: llm_tsr_request_endpoint_v01_llm_request_tsr_post
       requestBody:
@@ -658,7 +658,7 @@ paths:
   /v01/llm/autocomplete_country:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Country Endpoint
       operationId: autocomplete_country_endpoint_v01_llm_autocomplete_country_post
       requestBody:
@@ -682,7 +682,7 @@ paths:
   /v01/llm/autocomplete_aliases:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Aliases Endpoint
       operationId: autocomplete_aliases_endpoint_v01_llm_autocomplete_aliases_post
       requestBody:
@@ -706,7 +706,7 @@ paths:
   /v01/llm/review_tsr:
     post:
       tags:
-      - V1
+      - v1
       summary: Llm Tsr Review Endpoint
       operationId: llm_tsr_review_endpoint_v01_llm_review_tsr_post
       requestBody:
@@ -730,7 +730,7 @@ paths:
   /v01/autocomplete/autocomplete_aliases_graph:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Aliases Graph Endpoint
       operationId: autocomplete_aliases_graph_endpoint_v01_autocomplete_autocomplete_aliases_graph_post
       requestBody:
@@ -754,7 +754,7 @@ paths:
   /v01/llm/autocomplete_conditions_synonyms:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Conditions Endpoint
       operationId: autocomplete_conditions_endpoint_v01_llm_autocomplete_conditions_synonyms_post
       requestBody:
@@ -778,7 +778,7 @@ paths:
   /v01/llm/autocomplete_trial_id:
     post:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Trial Id Endpoint
       operationId: autocomplete_trial_id_endpoint_v01_llm_autocomplete_trial_id_post
       requestBody:
@@ -802,7 +802,7 @@ paths:
   /v01/mdt/request_pdf:
     post:
       tags:
-      - V1
+      - v1
       summary: Mdt Request Pdf Endpoint
       operationId: mdt_request_pdf_endpoint_v01_mdt_request_pdf_post
       requestBody:
@@ -826,7 +826,7 @@ paths:
   /v01/wrapper/autocomplete:
     get:
       tags:
-      - V1
+      - v1
       summary: Autocomplete Wrapper Endpoint
       operationId: autocomplete_wrapper_endpoint_v01_wrapper_autocomplete_get
       responses:
@@ -838,7 +838,7 @@ paths:
   /v01/wrapper/study/search/counts:
     get:
       tags:
-      - V1
+      - v1
       summary: Count Wrapper Endpoint
       operationId: count_wrapper_endpoint_v01_wrapper_study_search_counts_get
       responses:
@@ -849,20 +849,6 @@ paths:
               schema: {}
 components:
   schemas:
-    JsonRequest:
-      properties: {}
-      additionalProperties: true
-      type: object
-      title: JsonRequest
-    HTTPValidationError:
-      properties:
-        detail:
-          items:
-            $ref: '#/components/schemas/ValidationError'
-          type: array
-          title: Detail
-      type: object
-      title: HTTPValidationError
     ValidationError:
       properties:
         loc:
@@ -884,3 +870,17 @@ components:
       - msg
       - type
       title: ValidationError
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    JsonRequest:
+      properties: {}
+      additionalProperties: true
+      type: object
+      title: JsonRequest
