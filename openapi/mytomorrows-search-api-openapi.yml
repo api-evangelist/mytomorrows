@@ -1,0 +1,116 @@
+openapi: 3.2.0
+info:
+  title: Enterprise Search API
+  version: 0.1.0
+tags:
+- name: Search
+paths:
+  /v01/search/request_tsr:
+    post:
+      tags:
+      - Search
+      summary: Request Tsr Endpoint
+      operationId: request_tsr_endpoint_v01_search_request_tsr_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v01/search/generate_tsr:
+    post:
+      tags:
+      - Search
+      summary: Generate Tsr Endpoint
+      operationId: generate_tsr_endpoint_v01_search_generate_tsr_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v01/search/questionnaire:
+    post:
+      tags:
+      - Search
+      summary: Questionnaire Endpoint
+      operationId: questionnaire_endpoint_v01_search_questionnaire_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+components:
+  schemas:
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    JsonRequest:
+      properties: {}
+      additionalProperties: true
+      type: object
+      title: JsonRequest
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError

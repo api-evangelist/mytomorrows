@@ -97,18 +97,128 @@ apis:
     url: https://enterprise-search.mytomorrows.com/docs
   - type: APIReference
     url: https://enterprise-search.mytomorrows.com/redoc
-- aid: mytomorrows:mytomorrows-v1-api
-  name: myTomorrows V1 API
-  description: The V1 API from myTomorrows — 38 operation(s) for v1.
+- aid: mytomorrows:mytomorrows-anno-api
+  name: myTomorrows Anno API
+  description: The Anno API from myTomorrows — 2 operation(s) for anno.
   humanURL: https://trialsearchai-beta.mytomorrows.com/
   baseURL: https://enterprise-search.mytomorrows.com
   tags:
-  - v1
-  tags_raw:
-  - V1
+  - Anno
   properties:
   - type: OpenAPI
-    url: openapi/mytomorrows-v1-api-openapi.yml
+    url: openapi/mytomorrows-anno-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-autocomplete-api
+  name: myTomorrows Autocomplete API
+  description: The Autocomplete API from myTomorrows — 1 operation(s) for autocomplete.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Autocomplete
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-autocomplete-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-docs-api
+  name: myTomorrows Docs API
+  description: The Docs API from myTomorrows — 1 operation(s) for docs.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Docs
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-docs-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-document-api
+  name: myTomorrows Document API
+  description: The Document API from myTomorrows — 1 operation(s) for document.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Document
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-document-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-es-api
+  name: myTomorrows Es API
+  description: The Es API from myTomorrows — 19 operation(s) for es.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Es
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-es-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-llm-api
+  name: myTomorrows Llm API
+  description: The Llm API from myTomorrows — 8 operation(s) for llm.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Llm
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-llm-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-mdt-api
+  name: myTomorrows Mdt API
+  description: The Mdt API from myTomorrows — 1 operation(s) for mdt.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Mdt
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-mdt-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-search-api
+  name: myTomorrows Search API
+  description: The Search API from myTomorrows — 3 operation(s) for search.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Search
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-search-api-openapi.yml
+  - type: Documentation
+    url: https://enterprise-search.mytomorrows.com/docs
+  - type: APIReference
+    url: https://enterprise-search.mytomorrows.com/redoc
+- aid: mytomorrows:mytomorrows-wrapper-api
+  name: myTomorrows Wrapper API
+  description: The Wrapper API from myTomorrows — 2 operation(s) for wrapper.
+  humanURL: https://trialsearchai-beta.mytomorrows.com/
+  baseURL: https://enterprise-search.mytomorrows.com
+  tags:
+  - Wrapper
+  properties:
+  - type: OpenAPI
+    url: openapi/mytomorrows-wrapper-api-openapi.yml
   - type: Documentation
     url: https://enterprise-search.mytomorrows.com/docs
   - type: APIReference

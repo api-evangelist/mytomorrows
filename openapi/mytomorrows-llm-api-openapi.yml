@@ -1,0 +1,236 @@
+openapi: 3.2.0
+info:
+  title: Enterprise Search Llm API
+  version: 0.1.0
+tags:
+- name: LLM
+paths:
+  /v01/llm/llm_tsr_generate:
+    post:
+      tags:
+      - LLM
+      summary: Llm Tsr Generate Endpoint
+      operationId: llm_tsr_generate_endpoint_v01_llm_llm_tsr_generate_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v01/llm/email_tsr:
+    post:
+      tags:
+      - LLM
+      summary: Emailtsr Endpoint
+      operationId: emailTSR_endpoint_v01_llm_email_tsr_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v01/llm/request_tsr:
+    post:
+      tags:
+      - LLM
+      summary: Llm Tsr Request Endpoint
+      operationId: llm_tsr_request_endpoint_v01_llm_request_tsr_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v01/llm/autocomplete_country:
+    post:
+      tags:
+      - LLM
+      summary: Autocomplete Country Endpoint
+      operationId: autocomplete_country_endpoint_v01_llm_autocomplete_country_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v01/llm/autocomplete_aliases:
+    post:
+      tags:
+      - LLM
+      summary: Autocomplete Aliases Endpoint
+      operationId: autocomplete_aliases_endpoint_v01_llm_autocomplete_aliases_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v01/llm/review_tsr:
+    post:
+      tags:
+      - LLM
+      summary: Llm Tsr Review Endpoint
+      operationId: llm_tsr_review_endpoint_v01_llm_review_tsr_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v01/llm/autocomplete_conditions_synonyms:
+    post:
+      tags:
+      - LLM
+      summary: Autocomplete Conditions Endpoint
+      operationId: autocomplete_conditions_endpoint_v01_llm_autocomplete_conditions_synonyms_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /v01/llm/autocomplete_trial_id:
+    post:
+      tags:
+      - LLM
+      summary: Autocomplete Trial Id Endpoint
+      operationId: autocomplete_trial_id_endpoint_v01_llm_autocomplete_trial_id_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+components:
+  schemas:
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    JsonRequest:
+      properties: {}
+      additionalProperties: true
+      type: object
+      title: JsonRequest
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError

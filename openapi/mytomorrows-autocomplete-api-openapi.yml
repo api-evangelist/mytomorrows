@@ -1,33 +1,22 @@
 openapi: 3.2.0
 info:
-  title: Enterprise Search Legacy GraphQL Proxy API
+  title: Enterprise Search Autocomplete API
   version: 0.1.0
 tags:
-- name: Legacy GraphQL Proxy
+- name: Autocomplete
 paths:
-  /gql/graphql:
+  /v01/autocomplete/autocomplete_aliases_graph:
     post:
       tags:
-      - Legacy GraphQL Proxy
-      summary: Forward Legacy Graphql Request
-      description: 'Transparently forward /graphql requests to the legacy GraphQL lambda.
-
-        Log the origin to track current consumers of the endpoint.'
-      operationId: forward_legacy_graphql_request_gql_graphql_post
-      parameters:
-      - name: content-type
-        in: header
+      - Autocomplete
+      summary: Autocomplete Aliases Graph Endpoint
+      operationId: autocomplete_aliases_graph_endpoint_v01_autocomplete_autocomplete_aliases_graph_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JsonRequest'
         required: true
-        schema:
-          type: string
-          title: Content-Type
-      - name: origin
-        in: header
-        required: false
-        schema:
-          type: string
-          default: unknown
-          title: Origin
       responses:
         '200':
           description: Successful Response
@@ -51,6 +40,11 @@ components:
           title: Detail
       type: object
       title: HTTPValidationError
+    JsonRequest:
+      properties: {}
+      additionalProperties: true
+      type: object
+      title: JsonRequest
     ValidationError:
       properties:
         loc:

@@ -1,0 +1,19 @@
+openapi: 3.2.0
+info:
+  title: Enterprise Search Docs API
+  version: 0.1.0
+tags:
+- name: Docs
+paths:
+  /v01/docs:
+    get:
+      tags:
+      - Docs
+      summary: Api Docs
+      operationId: api_docs_v01_docs_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
