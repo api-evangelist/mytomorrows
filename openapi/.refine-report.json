@@ -17,9 +17,7 @@
     "mytomorrows-system-api-openapi.yml",
     "mytomorrows-wrapper-api-openapi.yml"
   ],
-  "archived": [
-    "deleted 1 superseded output(s) from the previous generation"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -75,13 +73,20 @@
     "mytomorrows-enterprise-search-openapi.json: declared missing tag: Search",
     "mytomorrows-enterprise-search-openapi.json: declared missing tag: System",
     "mytomorrows-enterprise-search-openapi.json: declared missing tag: Wrapper",
-    "superseded outputs removed: mytomorrows-v1-api-openapi.yml",
-    "apis.yml register: written (+9 apis, 12 total)"
+    "apis.yml register: already-registered"
   ],
   "skipped": [
+    "mytomorrows-anno-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mytomorrows-autocomplete-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mytomorrows-docs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mytomorrows-document-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mytomorrows-es-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "mytomorrows-legacy-graphql-proxy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mytomorrows-llm-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mytomorrows-mdt-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "mytomorrows-public-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mytomorrows-search-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "mytomorrows-system-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "mytomorrows-v1-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+    "mytomorrows-wrapper-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]
 }
