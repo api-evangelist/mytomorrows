@@ -145,6 +145,8 @@ apis:
   humanURL: https://trialsearchai-beta.mytomorrows.com/
   baseURL: https://enterprise-search.mytomorrows.com
   tags:
+  - Documents
+  tags_raw:
   - Document
   properties:
   - type: OpenAPI
@@ -173,6 +175,8 @@ apis:
   humanURL: https://trialsearchai-beta.mytomorrows.com/
   baseURL: https://enterprise-search.mytomorrows.com
   tags:
+  - LLM
+  tags_raw:
   - Llm
   properties:
   - type: OpenAPI
