@@ -1,0 +1,12 @@
+{
+ "url": "https://enterprise-search.mytomorrows.com/openapi.json",
+ "requested_url": "https://enterprise-search.mytomorrows.com/openapi.json",
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 21074,
+ "sha256": "a030cf3a181c2daf5369b8900c17f392a233cce220b47ba3be341bae9906ab39",
+ "fetched_at": "2026-10-04",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "byte-identical",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the archived file is byte-identical to what the provider serves."
+}
