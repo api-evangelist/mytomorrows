@@ -1,17 +1,18 @@
-generated: '2026-07-20'
+generated: '2026-09-23'
 method: generated
-source: openapi/mytomorrows-enterprise-search-openapi.json
+source: openapi/mytomorrows-legacy-graphql-proxy-api-openapi.yml, openapi/mytomorrows-public-api-openapi.yml,
+  openapi/mytomorrows-system-api-openapi.yml, openapi/mytomorrows-v1-api-openapi.yml
 description: Recommended x-agentic-access execution contracts, classified heuristically from
   the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
   audience per deployment. See research/curity/agentic-governance/.
 summary:
   operations: 42
   by_action_class:
-    acting: 33
-    connected: 9
+    acting: 31
+    connected: 11
   by_consequence:
-    write: 33
-    read: 9
+    write: 31
+    read: 11
   human_in_the_loop_required: 0
 operations:
 - path: /gql/graphql
@@ -74,18 +75,12 @@ operations:
   method: post
   operationId: get_annotations_endpoint_es_api_v01_anno_to_annotate_post
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /es/api/v01/llm/llm_tsr_generate
   method: post
   operationId: llm_tsr_generate_endpoint_es_api_v01_llm_llm_tsr_generate_post
@@ -360,18 +355,12 @@ operations:
   method: post
   operationId: get_annotations_endpoint_v01_anno_to_annotate_post
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /v01/llm/llm_tsr_generate
   method: post
   operationId: llm_tsr_generate_endpoint_v01_llm_llm_tsr_generate_post
