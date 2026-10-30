@@ -1,4 +1,4 @@
-# mytomorrows
+# myTomorrows
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,6 +64,128 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-mytomorrows is a company surfaced as a portfolio company of balderton-capital and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+myTomorrows is a healthcare technology platform that helps patients and healthcare professionals discover and access clinical trials and expanded-access (pre-approval) treatment options, and helps biopharma companies run and manage expanded-access programs (EAPs), collect real-world data, and recruit trial patients. Founded in 2012 by Dr. Ronald Brus, the company operates in roughly 50 countries. Its Trial Search AI product is backed by a FastAPI "Enterprise Search API" that generates Trial Search Reports (TSR), resolves conditions, and searches studies. This profile was surfaced as a portfolio company of Balderton Capital and enriched by the API Evangelist pipeline from a harvested OpenAPI and public trust surface.
 
-Backed by: balderton-capital — https://mytomorrows.com/en/
+**Areas:** Company · Healthcare · Clinical Trials · Expanded Access · Pharmaceuticals · Patient Access · Life Sciences · Search · Artificial Intelligence
+
+## myTomorrows on APIs.io
+
+Everything profiled for myTomorrows is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mytomorrows/](https://apis.io/providers/mytomorrows/)** — or go straight to one of the APIs or properties below.
+
+### APIs (12)
+
+- [myTomorrows Legacy GraphQL Proxy API](https://apis.io/apis/mytomorrows/mytomorrows-legacy-graphql-proxy-api/) — The Legacy GraphQL Proxy API from myTomorrows — 1 operation(s) for legacy graphql proxy.
+- [myTomorrows Public API](https://apis.io/apis/mytomorrows/mytomorrows-public-api/) — The Public API from myTomorrows — 1 operation(s) for public.
+- [myTomorrows System API](https://apis.io/apis/mytomorrows/mytomorrows-system-api/) — The System API from myTomorrows — 2 operation(s) for system.
+- [myTomorrows Anno API](https://apis.io/apis/mytomorrows/mytomorrows-anno-api/) — The Anno API from myTomorrows — 2 operation(s) for anno.
+- [myTomorrows Autocomplete API](https://apis.io/apis/mytomorrows/mytomorrows-autocomplete-api/) — The Autocomplete API from myTomorrows — 1 operation(s) for autocomplete.
+- [myTomorrows Docs API](https://apis.io/apis/mytomorrows/mytomorrows-docs-api/) — The Docs API from myTomorrows — 1 operation(s) for docs.
+- [myTomorrows Document API](https://apis.io/apis/mytomorrows/mytomorrows-document-api/) — The Document API from myTomorrows — 1 operation(s) for document.
+- [myTomorrows Es API](https://apis.io/apis/mytomorrows/mytomorrows-es-api/) — The Es API from myTomorrows — 19 operation(s) for es.
+- [myTomorrows Llm API](https://apis.io/apis/mytomorrows/mytomorrows-llm-api/) — The Llm API from myTomorrows — 8 operation(s) for llm.
+- [myTomorrows Mdt API](https://apis.io/apis/mytomorrows/mytomorrows-mdt-api/) — The Mdt API from myTomorrows — 1 operation(s) for mdt.
+- [myTomorrows Search API](https://apis.io/apis/mytomorrows/mytomorrows-search-api/) — The Search API from myTomorrows — 3 operation(s) for search.
+- [myTomorrows Wrapper API](https://apis.io/apis/mytomorrows/mytomorrows-wrapper-api/) — The Wrapper API from myTomorrows — 2 operation(s) for wrapper.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [mytomorrows-enterprise-search](https://apis.io/servers/mytomorrows/mytomorrows-enterprise-search/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Mytomorrows Agentic Access](https://apis.io/agentic-access/mytomorrows/mytomorrows-agentic-access/)
+
+#### Collections (4)
+
+Postman and Open Collection request collections.
+
+- [Enterprise Search Legacy GraphQL Proxy API](https://apis.io/collections/mytomorrows/open-mytomorrows-legacy-graphql-proxy-api/)
+- [Enterprise Search Legacy GraphQL Proxy Public API](https://apis.io/collections/mytomorrows/open-mytomorrows-public-api/)
+- [Enterprise Search Legacy GraphQL Proxy System API](https://apis.io/collections/mytomorrows/open-mytomorrows-system-api/)
+- [Enterprise Search Legacy GraphQL Proxy V1 API](https://apis.io/collections/mytomorrows/open-mytomorrows-v1-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Mytomorrows Enterprise Search Overlay](https://apis.io/overlays/mytomorrows/mytomorrows-enterprise-search-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Mytomorrows Domain Security](https://apis.io/security/mytomorrows/mytomorrows-domain-security/)
+- [Mytomorrows Trust Center](https://apis.io/security/mytomorrows/mytomorrows-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://mytomorrows.com/en/)
+- [Sign up](https://mytomorrows.com/enterprise/api-beta-program/)
+- [Blog](https://mytomorrows.com/en/blog)
+- [Compliance](https://trust.mytomorrows.com/)
+- [Terms of service](https://mytomorrows.com/en/terms-and-conditions)
+- [Privacy policy](https://mytomorrows.com/en/privacy-statement)
+- [GitHub](https://github.com/myTomorrows)
+
+## API Evangelist rating
+
+**Kin Score 34.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 36.2 |
+| Contract governance | 4.5 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 37.5 |
+| Access clarity | 50.0 |
+
+**Agent readiness 21.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mytomorrows/](https://apis.io/providers/mytomorrows/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for myTomorrows: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mytomorrows/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
